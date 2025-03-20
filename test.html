@@ -44,14 +44,21 @@
                         <h3>Main Dishes</h3>
                     </header>
                     <figure>
-                        <img src="1.jpg" alt="Kabuli Palaw">
+                        <picture>
+                            <source srcset="media/kabuli_palaw_small.jpg" media="(max-width: 672px)">
+                            <source srcset="media/kabuli_palaw_large.jpg" media="(min-width: 673px)">
+                            <img src="media/kabuli_palaw_default.jpg" alt="Kabuli Palaw">
+                        </picture>
                         <figcaption>Kabuli Palaw - A flavorful Afghan rice dish.</figcaption>
                     </figure>
                     <figure>
-                        <img src="1.jpg" alt="Mantu">
+                        <picture>
+                            <source srcset="media/mantu_small.jpg" media="(max-width: 672px)">
+                            <source srcset="media/mantu_large.jpg" media="(min-width: 673px)">
+                            <img src="media/mantu_default.jpg" alt="Mantu">
+                        </picture>
                         <figcaption>Mantu - Delicious Afghan dumplings.</figcaption>
                     </figure>
-                    
                 </section>
     
                 
@@ -60,10 +67,13 @@
                         <h3>Desserts</h3>
                     </header>
                     <figure>
-                        <img src="5.jpg" alt="Afghan Sweets">
+                        <picture>
+                            <source srcset="media/afghan_sweets_small.jpg" media="(max-width: 672px)">
+                            <source srcset="media/afghan_sweets_large.jpg" media="(min-width: 673px)">
+                            <img src="media/afghan_sweets_default.jpg" alt="Afghan Sweets">
+                        </picture>
                         <figcaption>Afghan Sweets - A selection of traditional treats.</figcaption>
                     </figure>
-                    
                 </section>
             </article>
     
@@ -80,6 +90,26 @@
                 <h2>Special Offers</h2>
                 <p>Check out our weekly specials and discounts! We love to surprise our guests with new flavors and deals.</p>
             </aside>
+            
+            <!-- New section for Instagram Reels -->
+            <article id="reels">
+                <header>
+                    <h2>Our Instagram Reels</h2>
+                </header>
+                <section>
+                    <header>
+                        <h3>What Afghans Eat in a Day</h3>
+                    </header>
+                    <iframe src="https://www.instagram.com/reel/DD-f1cqRmMd/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </section>
+                <section>
+                    <header>
+                        <h3>Kabuli Palaw</h3>
+                    </header>
+                    <iframe src="https://www.instagram.com/reel/DHNVak8t5CC/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </section>
+            </article>
+    
         </main>
     
         <footer>
