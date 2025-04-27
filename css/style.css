@@ -9,6 +9,58 @@ body {
     line-height: 1.6;
 }
 
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reels-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
 h1, h2, h3 {
     font-family: 'Georgia', serif;
     color: #8B2635;
@@ -24,16 +76,14 @@ p {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     background-color: #8B2635;
-    text-align: center;
     padding: 10px;
     border-radius: 10px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -58,46 +108,13 @@ img {
     object-fit: cover;
 }
 
-
-.cover {
-    object-fit: cover;
-}
-
-.contain {
-    object-fit: contain;
-}
-
-.opacity_low {
-    opacity: 0.3;
-}
-
-.opacity_med {
-    opacity: 0.6;
-}
-
-
-.left_float {
-    width: 50px;
-    height: auto;
-    float: left;
-    margin: 10px;
-}
-
-.right_float {
-    width: 50px;
-    height: auto;
-    float: right;
-    margin: 10px;
-}
-
 iframe {
-    width: 50%;
-    height: 40;
+    width: 80%;
+    height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 10px;
 }
-
 
 section, article, aside, footer {
     background-color: #fff;
@@ -108,37 +125,14 @@ section, article, aside, footer {
     width: 80%;
 }
 
-
 aside {
     background: linear-gradient(#ffe0b2, #f8bbd0);
 }
-
 
 ul {
     list-style-type: circle;
     padding-left: 40px;
 }
-
-ul.inside {
-    list-style-position: inside;
-}
-
-ul.roman_upper {
-    list-style-type: upper-roman;
-}
-
-ul.roman_lower {
-    list-style-type: lower-roman;
-}
-
-ul.alpha_lower {
-    list-style-type: lower-alpha;
-}
-
-ul.alpha_upper {
-    list-style-type: upper-alpha;
-}
-
 
 footer {
     background-color: white;
