@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,7 +47,8 @@ img {
 
 #home, #menu, #about, #contact, #reels {
     padding: 20px;
-    background-color: #ffffff;
+    background-color: hwb(0 95% 3%);
+    color: #1e1e1c8c;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -66,7 +68,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: #f10f0fc2;
+    color: #f1c40f;
     font-weight: bold;
 }
 
