@@ -2,90 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Senjed Afghan Restaurant - Menu & Order</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Senjed Afghan Restaurant</h1>
 
-  <form action="#" method="post">
-    <table>
-      <caption><strong>Our Menu</strong></caption>
-      <thead>
-        <tr>
-          <th>Select</th>
-          <th>Dish</th>
-          <th>Price</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" name="kabuli-lamb" value="Kabuli Palaw (Lamb)"></td>
-          <td>Kabuli Palaw (Lamb)</td>
-          <td>$24.99</td>
-          <td><input type="number" name="kabuli-lamb-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="kabuli-beef" value="Kabuli Palaw (Beef)"></td>
-          <td>Kabuli Palaw (Beef)</td>
-          <td>$19.99</td>
-          <td><input type="number" name="kabuli-beef-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="chalaw" value="Chalaw (Simple Rice)"></td>
-          <td>Chalaw (Simple Rice)</td>
-          <td>$11.99</td>
-          <td><input type="number" name="chalaw-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="mantu" value="Mantu (Meat Dumplings)"></td>
-          <td>Mantu (Meat Dumplings)</td>
-          <td>$14.99</td>
-          <td><input type="number" name="mantu-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="ashak" value="Ashak (Vegetable Dumplings)"></td>
-          <td>Ashak (Vegetable Dumplings)</td>
-          <td>$11.99</td>
-          <td><input type="number" name="ashak-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="shir-berenj" value="Shir Berenj"></td>
-          <td>Shir Berenj</td>
-          <td>$6.99</td>
-          <td><input type="number" name="shir-berenj-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="fereni" value="Fereni"></td>
-          <td>Fereni</td>
-          <td>$6.99</td>
-          <td><input type="number" name="fereni-qty" min="0" max="10" value="0"></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="keshmeshi-cake" value="Keshmeshi Afghani Cake"></td>
-          <td>Keshmeshi Afghani Cake</td>
-          <td>$6.99</td>
-          <td><input type="number" name="keshmeshi-cake-qty" min="0" max="10" value="0"></td>
-        </tr>
-      </tbody>
-    </table>
+  <header class="header-flex">
+    <h1>Senjed Afghan Restaurant</h1>
+    <nav>
+        <ul class="nav-flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Menu</a></li>
+            <li><a href="formsAndTables.html">Order Now</a></li>
+            <li><a href="instagramReels.html">Instagram Reels</a></li>
+            <!-- <li><a href="#about">About Us</a></li> -->
+            <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+</header>
 
-    <fieldset>
-      <legend>Your Information</legend>
-      <label for="customer-name">Name:</label>
-      <input type="text" id="customer-name" name="customer-name" required>
-      <br><br>
-      <label for="customer-email">Email:</label>
-      <input type="email" id="customer-email" name="customer-email" required>
-      <br><br>
-      <label for="customer-phone">Phone:</label>
-      <input type="tel" id="customer-phone" name="customer-phone">
-    </fieldset>
+<main>
+  <section class="content-section" id="menu">
+    <h2>Order Your Favorite Afghan Dishes</h2>
+    
+    <form action="#" method="post">
+      <table>
+        <caption><strong>Our Menu</strong></caption>
+        <thead>
+          <tr>
+            <th>Select</th>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="kabuli-lamb" value="Kabuli Pulao (Lamb/Mutton)"></td>
+            <td>Kabuli Pulao (Lamb/Mutton)</td>
+            <td>$24.99</td>
+            <td><input type="number" name="kabuli-lamb-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="kabuli-beef" value="Kabuli Pulao (Beef)"></td>
+            <td>Kabuli Pulao (Beef)</td>
+            <td>$19.99</td>
+            <td><input type="number" name="kabuli-beef-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="chalaw" value="Chalaw (Simple Rice)"></td>
+            <td>Chalaw (Simple Rice)</td>
+            <td>$14.99</td>
+            <td><input type="number" name="chalaw-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="dopiaza-lamb" value="Dopiaza (Lamb/Mutton)"></td>
+            <td>Dopiaza (Lamb/Mutton)</td>
+            <td>$24.99</td>
+            <td><input type="number" name="dopiaza-lamb-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="kofta" value="Kofta (Meatball)"></td>
+            <td>Kofta (Meatball)</td>
+            <td>$11.99</td>
+            <td><input type="number" name="kofta-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="dopiaza-beef" value="Dopiaza (Beef)"></td>
+            <td>Dopiaza (Beef)</td>
+            <td>$19.99</td>
+            <td><input type="number" name="dopiaza-beef-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="mantu" value="Mantu (Meat Dumplings)"></td>
+            <td>Mantu (Meat Dumplings)</td>
+            <td>$14.99</td>
+            <td><input type="number" name="mantu-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="bolani" value="Bolani"></td>
+            <td>Bolani</td>
+            <td>$6.99</td>
+            <td><input type="number" name="bolani-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="ashak" value="Ashak (Vegetable Dumplings)"></td>
+            <td>Ashak (Vegetable Dumplings)</td>
+            <td>$11.99</td>
+            <td><input type="number" name="ashak-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="lamb-curry" value="Lamb/Mutton Curry"></td>
+            <td>Lamb/Mutton Curry</td>
+            <td>$24.99</td>
+            <td><input type="number" name="lamb-curry-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="beef-curry" value="Beef Curry"></td>
+            <td>Beef Curry</td>
+            <td>$19.99</td>
+            <td><input type="number" name="beef-curry-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="chicken-curry" value="Chicken Curry/ Lawand"></td>
+            <td>Chicken Curry/ Lawand</td>
+            <td>$11.99</td>
+            <td><input type="number" name="chicken-curry-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="bamya" value="Bamya (Okra)"></td>
+            <td>Bamya (Okra)</td>
+            <td>$6.99</td>
+            <td><input type="number" name="bamya-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="borani" value="Borani Baadenjan (Eggplant)"></td>
+            <td>Borani Baadenjan (Eggplant)</td>
+            <td>$6.99</td>
+            <td><input type="number" name="borani-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="palak" value="Palak (Spinach)"></td>
+            <td>Palak (Spinach)</td>
+            <td>$6.99</td>
+            <td><input type="number" name="palak-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="kabob" value="Lamb/Mutton/Beef/Shami Kabob"></td>
+            <td>Lamb/Mutton/Beef/Shami Kabob</td>
+            <td>$15.99</td>
+            <td><input type="number" name="kabob-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="chicken-kabob" value="Chicken Breast Kabob"></td>
+            <td>Chicken Breast Kabob</td>
+            <td>$11.99</td>
+            <td><input type="number" name="chicken-kabob-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="salmon-kabob" value="Salmon Kabob"></td>
+            <td>Salmon Kabob</td>
+            <td>$15.99</td>
+            <td><input type="number" name="salmon-kabob-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="lamb-biryani" value="Lamb/Mutton Biryani"></td>
+            <td>Lamb/Mutton Biryani</td>
+            <td>$24.99</td>
+            <td><input type="number" name="lamb-biryani-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="beef-biryani" value="Beef Biryani"></td>
+            <td>Beef Biryani</td>
+            <td>$19.99</td>
+            <td><input type="number" name="beef-biryani-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="chicken-biryani" value="Chicken Biryani"></td>
+            <td>Chicken Biryani</td>
+            <td>$14.99</td>
+            <td><input type="number" name="chicken-biryani-qty" min="0" max="10" value="0"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="pakawra-potato" value="Potato Pakawra"></td>
+            <td>Potato Pakawra</td>
+            <td>$6.99</td>
+            <td><input type="number" name="pakawra-potato-qty" min="0" max="10" value="0"></td>
+          </tr>
+          
+        </tbody>
+      </table>
 
-    <p>
-      <button type="submit">Place Order</button>
-    </p>
-  </form>
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="customer-name">Name:</label>
+        <input type="text" id="customer-name" name="customer-name" required>
+        <br><br>
+        <label for="customer-phone">Phone:</label>
+        <input type="tel" id="customer-phone" name="customer-phone">
+        <br><br>
+        <label for="customer-address">Address:</label>
+        <input type="text" id="customer-address" name="customer-address" required>
+        <br><br>
+        <label for="customer-city">City:</label>
+        <input type="text" id="customer-city" name="customer-city" required>
+        <br><br>
+        <label for="customer-zipcode">Zip Code:</label>
+        <input type="text" id="customer-zipcode" name="customer-zipcode" required>
+      </fieldset>
+
+      <p>
+        <button type="submit">Place Order</button>
+      </p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2023 Senjed Afghan Restaurant</p>
+</footer>
 
 </body>
 </html>
