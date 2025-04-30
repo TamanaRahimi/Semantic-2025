@@ -1,85 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Senjed Afghan Restaurant</title>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tamana Rahimi">
-    <meta name="description" content="Senjed Afghan Restaurant is a page where you people will be able to order Afghan food and enjoy the great recipes">
-    <meta name="keywords" content="Afgani Food">
+    <meta name="description" content="Senjed Afghan Restaurant offers traditional Afghan dishes made with love and the freshest ingredients. Order online and enjoy authentic flavors.">
+    <meta name="keywords" content="Afghan Food, Afghan Cuisine, Traditional Afghan Dishes, Afghan Restaurant, Lexington Food">
+    <title>Senjed Afghan Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Senjed Afghan Restaurant",
+      "image": "https://yourwebsite.com/path-to-your-logo-or-image.jpg",
+      "description": "Experience authentic Afghan food at Senjed Afghan Restaurant. Traditional recipes with fresh ingredients and a modern touch.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lexington",
+        "addressRegion": "KY",
+        "postalCode": "40502",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-859-312-1370",
+      "url": "https://tamanarahimi.github.io/Semantic-2025/index.html",
+      "priceRange": "$$",
+      "servesCuisine": "Afghan",
+      "sameAs": [
+        "https://www.instagram.com/senjed_afghan_restaurant",
+        "https://youtube.com/@senjedafghancooking"
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Senjed Afghan Restaurant Menu",
+        "url": "https://tamanarahimi.github.io/Semantic-2025/Recipes.html",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Afghan Dishes",
+            "description": "A variety of traditional Afghan recipes featuring rich spices and fresh ingredients.",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Kabuli Pulao",
+                "description": "Fragrant basmati rice cooked with tender lamb, raisins, and carrots.",
+                "offers": {
+                  "@type": "Offer",
+                  "priceCurrency": "USD",
+                  "price": "14.99"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Mantu",
+                "description": "Steamed dumplings filled with seasoned beef and onions, topped with yogurt sauce.",
+                "offers": {
+                  "@type": "Offer",
+                  "priceCurrency": "USD",
+                  "price": "12.99"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Bolani",
+                "description": "Flatbread stuffed with potatoes, green onions, and herbs, served crispy.",
+                "offers": {
+                  "@type": "Offer",
+                  "priceCurrency": "USD",
+                  "price": "8.99"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
 
 <header class="header-flex">
     <h1>Senjed Afghan Restaurant</h1>
-    <nav>
+    <nav aria-label="Main Navigation">
         <ul class="nav-flex">
             <li><a href="index.html">Home</a></li>
             <li><a href="Recipes.html">Menu</a></li>
             <li><a href="formsAndTables.html">Order Now</a></li>
             <li><a href="instagramReels.html">Instagram Reels</a></li>
-            <!-- <li><a href="#about">About Us</a></li> -->
-            <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
     </nav>
 </header>
 
 <main class="main-flex">
-    <article id="home">
+    <section id="home">
         <header><h2>Welcome to Senjed Afghan Restaurant</h2></header>
         <p>Experience the authentic flavors of Afghanistan with our traditional dishes, prepared with love and the freshest ingredients.</p>
-    </article>
+    </section>
 
-    <article id="menu">
+    <section id="menu">
         <header><h2>Our Menu</h2></header>
-
-        <section>
+        <div>
             <header><h3>Afghan Dishes</h3></header>
             <a href="Recipes.html" class="clickable-image">
                 <figure class="centered-image">
                     <picture>
                         <source srcset="6.jpg" media="(max-width: 672px)">
                         <source srcset="6.jpg" media="(min-width: 673px)">
-                        <img src="6.jpg" alt="Afghan Dishes">
+                        <img src="6.jpg" alt="Traditional Afghan dishes at Senjed Afghan Restaurant">
                     </picture>
                     <figcaption>Discover the rich flavors and aromatic spices that make Afghan cuisine so unique and delicious.</figcaption>
                 </figure>
             </a>
-        </section>        
-        
-        
-    </article>
+        </div>
+    </section>
 
-    <article id="about">
+    <section id="about">
         <header><h2>About Us</h2></header>
         <p>At Senjed Afghan Restaurant, we are passionate about sharing the rich culinary heritage of Afghanistan. Our recipes have been passed down through generations and are prepared with a modern touch.</p>
-    </article>
+    </section>
 
-    <aside>
+    <aside aria-label="Special Offers">
         <h2>Special Offers</h2>
         <p>Come and check out our weekly specials and discounts! We love to surprise our guests with new flavors and deals.</p>
     </aside>
 </main>
 
-<footer class="footer-flex">
+<footer class="footer-flex" role="contentinfo">
     <section id="contact">
         <h2>Contact Us</h2>
         <address>
             <p>Lexington, KY</p>
-            <p>Phone: (859) 312-1370</p>
+            <p>Phone: <a href="tel:+18593121370">(859) 312-1370</a></p>
             <p>Email: <a href="mailto:rahimitamana71@gmail.com">rahimitamana71@gmail.com</a></p>
         </address>
-        <div class="social-flex">
-            <a href="https://www.instagram.com/senjed_afghan_restaurant" target="_blank">
+        <div class="social-flex" aria-label="Social Media Links">
+            <a href="https://www.instagram.com/senjed_afghan_restaurant" target="_blank" aria-label="Instagram">
                 <img class="left_float" src="instagram-icon.png" alt="Instagram Icon">
             </a>
-            <a href="https://youtube.com/@senjedafghancooking" target="_blank">
+            <a href="https://youtube.com/@senjedafghancooking" target="_blank" aria-label="YouTube">
                 <img class="right_float" src="youtube-icon.png" alt="YouTube Icon">
             </a>
         </div>
-        <p>&copy; Senjed Afghan Restaurant</p>
+        <p>&copy; 2025 Senjed Afghan Restaurant</p>
     </section>
 </footer>
 
